@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lore Olympus Webtoon</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#read-now" class="cta">Read Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">Lore Olympus</h1>
+      <p class="hero-subtitle">A Tale of Gods, Love, and Myth</p>
+    </div>
+  </section>
+
+  <!-- Main Characters Section -->
+  <section id="characters">
+    <h2>Main Characters</h2>
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="https://your-hades-image.jpg" alt="Hades">
+        <div class="character-details">
+          <h3>Hades</h3>
+          <p>God of the Underworld</p>
+        </div>
+      </div>
+      <div class="character-card">
+        <img src="https://your-persephone-image.jpg" alt="Persephone">
+        <div class="character-details">
+          <h3>Persephone</h3>
+          <p>Goddess of Spring</p>
+        </div>
+      </div>
+      <!-- Add more characters -->
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <div class="cta-section">
+    <a href="#read-now" class="cta-btn">Read More</a>
+  </div>
+
+  <!-- Supernatural Manhwa Carousel Section -->
+  <section id="manhwa-carousel">
+    <h2>Best Supernatural Manhwa</h2>
+    <div class="carousel">
+      <div><img src="mahwa1.jpg" alt="Manhwa 1"></div>
+      <div><img src="mahwa2.jpg" alt="Manhwa 2"></div>
+      <div><img src="mahwa3.jpg" alt="Manhwa 3"></div>
+      <!-- Add more manhwa images -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Lore Olympus Fan Page. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript (integrated within the HTML file) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    // Document ready function for Slick Carousel
+    $(document).ready(function(){
+      $('.carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+</html>
